@@ -1,0 +1,12 @@
+{
+    "targetSet": {
+        "Programs/TestProjectZahra/TestProjectZahra": {
+            "activeTargetType": "ITSboard"
+        },
+        "Programs/Aufgabe1ASM/Aufgabe1ASM": {
+            "activeTargetType": "ITSboard_Assembly"
+        }
+    },
+    "activeSolution": "../Programs/Aufgabe1ASM/Aufgabe1ASM.csolution.yml",
+    "activeTarget": "ITSboard_Assembly"
+}

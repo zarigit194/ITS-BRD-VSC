@@ -36,15 +36,15 @@ main
     MOV     R3, #0x80           ; load mask 0b1000
 
     ; Set LED
-    STRB    R2, [R6]    ; switch on LED D14
-    STRB    R3, [R6]    ; switch on LED D15
-    STRB    R0, [R6]    ; switch on LED D08
-    STRB    R0, [R7]    ; switch off LED D08
-    STRB    R0, [R6]    ; switch on LED D08
-    STRB    R1, [R6]    ; switch on LED D09
-    STRB    R2, [R7]    ; switch off LED D14
-    STRB    R3, [R7]    ; switch off LED D15
+    ; Optimierung: nur den Endzustand einstellen
+ +
+ +  MOV     R0,#0x03    ; D08 und D09
+ +  MOV     R1,#0xc0    ; D14 und D15
+ +
+ +  STRB    R0, [R6]    ; D08 and D09 einschalten
+ +  STRB    R1, [R7]    ; D14 and D15 ausschalten
+ +  
     b .
-    
-    ALIGN
+ + 
+ +  ALIGN
     END

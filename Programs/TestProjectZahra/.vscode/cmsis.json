@@ -1,0 +1,9 @@
+{
+    "targetSet": {
+        "TestProjectZahra": {
+            "activeTargetType": "ITSboard"
+        }
+    },
+    "activeSolution": "../TestProjectZahra.csolution.yml",
+    "activeTarget": "ITSboard"
+}
